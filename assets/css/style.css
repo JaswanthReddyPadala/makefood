@@ -101,6 +101,8 @@ button{
     padding:2rem 1rem;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     width:100%;
 }
 
@@ -156,4 +158,14 @@ button{
 .item_text{
     font-size: 1rem;
     text-align: left;
+}
+@media screen and (max-width:700px){
+    html{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:400px){
+    html{
+        font-size: 10px;
+    }
 }
