@@ -14,11 +14,10 @@ function search(){
                 .then(e => renderitems(e))
 }
 
-
 function renderitems(e){
     let results = e["results"];
     let resultslength = e["totalResults"];
-    console.log(results);
+    if(resultslength > 0 ){
     (results).forEach(element => {
         let item = document.createElement("div");
         item.setAttribute('class',"item");
@@ -32,6 +31,21 @@ function renderitems(e){
         item_text_box.appendChild(itemh3);
         item.appendChild(itemimage);
         item.appendChild(item_text_box);
+        item.setAttribute("id",`${element["id"]}`);
+        item.setAttribute(onclick,recipes());
         renderelement.appendChild(item);
     });
+    }
+    else{
+        let notfound = document.createElement("div");
+        notfound.innerHTML = "Sorry there are no recipes with your choice, please try with a different search"
+        notfound.setAttribute("class","not_found");
+        renderelement.setAttribute("justify-content","center");
+
+        renderelement.appendChild(notfound);
+    }
+}
+
+function recipes(c){
+    console.log(c);
 }

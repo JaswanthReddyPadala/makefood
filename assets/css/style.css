@@ -102,8 +102,11 @@ button{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     width:100%;
+    padding: 2rem;
+    justify-content: space-around;
+
 }
 
 
@@ -116,9 +119,13 @@ button{
     font-family: 'Quattrocento Sans', sans-serif;
     flex-direction: column;
     align-items:center;
-    margin-bottom: 2rem;
-    margin-right: 2rem;
+    margin-bottom: 3rem;
     animation: items 0.3s ease-in-out;
+    border: 5px solid  #d7385e;;
+}
+
+.item:nth-child(n+1){
+    margin-left: 2rem;
 }
 
 @keyframes items{
@@ -140,6 +147,13 @@ button{
 
 }
 
+.not_found{
+    margin-top: 3rem;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: lowercase;
+    color:rgb(255, 61, 61);
+}
 .item img{
     height:70%;
     width:100%;
@@ -156,9 +170,24 @@ button{
     padding: 0.2rem 0.7rem;
 }
 .item_text{
-    font-size: 1rem;
+    font-size: 1.3rem;
     text-align: left;
+    font-weight: lighter;
+    letter-spacing: 0.05rem;
 }
+.item:hover{
+    border: none;
+}
+.item:hover img{
+    transition: all 0.5s ease;
+    transform: scale(1);
+    height: 0%;
+}
+.item:hover .item_text_box{
+    opacity:0.8;
+    height:100%;
+}
+
 @media screen and (max-width:700px){
     html{
         font-size: 12px;
@@ -167,5 +196,8 @@ button{
 @media screen and (max-width:400px){
     html{
         font-size: 10px;
+    }
+    main{
+        height:
     }
 }
