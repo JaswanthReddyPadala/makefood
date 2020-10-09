@@ -13,7 +13,7 @@
     <header class="logobar"><h1>make f<img src="./assets/images/logo.svg" alt="logo"><img src="./assets/images/logo.svg" alt="logo">d</h1>
 
     </header>
-    <main>
+    <div class="main">
         <!-- <div class="selectbyname">
             <h3>Select by your favorite dish name</h3>
             <input type="checkbox" name="byname" id="byname" value="byname">
@@ -21,50 +21,53 @@
 
         <input type="text" placeholder="Name of food item" class="searchbox" value="">
         </div> -->
-        <div class="selectbymealtype">
-            <h3>Meal type</h3>
-        <select name="mealtype" id="mealtype">
-            <option value="maincourse">main course</option>
-            <option value="side dish">side dish</option>
-            <option value="dessert" >dessert</option>
-            <option value="appetizer">appetizer</option>
-            <option value="salad">salad</option>
-            <option value="bread">bread</option>
-            <option value="breakfast">breakfast</option>
-            <option value="soup">soup</option>
-            <option value="beverage">beverage</option>
-            <option value="sauce">sauce</option>
-            <option value="marinade">marinade</option>
-            <option value="fingerfood">fingerfood</option>
-            <option value="snack">snack</option>
-            <option value="drink">drink</option>
-        </select>
-
-        <div class="selectbycusine">
-            <h3>Cusine</h3>
-        <select name="cusine" id="cusine">
-            <option value="indian">African</option>
-            <option value="American">American</option>
-            <option value="British" >British</option>
-            <option value="Chinese">Chinese</option>
-            <option value="European">European</option>
-            <option value="French">French</option>
-            <option value="Indian">Indian</option>
-            <option value="Italian">Italian</option>
-            <option value="Japanese">Japanese</option>
-            <option value="Mediterranean">Mediterranean</option>
-            <option value="Mexican">Mexican</option>
-            <option value="Spanish">Spanish</option>
-            <option value="Thai">Thai</option>
-            <option value="Vietnamese">Vietnamese</option>
-        </select>
+        <div class="main_box">
+            <div class="selectbymealtype">
+                <h3>Meal type</h3>
+            <select name="mealtype" id="mealtype">
+                <option value="maincourse">main course</option>
+                <option value="side dish">side dish</option>
+                <option value="dessert" >dessert</option>
+                <option value="appetizer">appetizer</option>
+                <option value="salad">salad</option>
+                <option value="bread">bread</option>
+                <option value="breakfast">breakfast</option>
+                <option value="soup">soup</option>
+                <option value="beverage">beverage</option>
+                <option value="sauce">sauce</option>
+                <option value="marinade">marinade</option>
+                <option value="fingerfood">fingerfood</option>
+                <option value="snack">snack</option>
+                <option value="drink">drink</option>
+            </select>
+            </div>
+            <div class="selectbycusine">
+                <h3>Cusine</h3>
+            <select name="cusine" id="cusine">
+                <option value="indian">African</option>
+                <option value="American">American</option>
+                <option value="British" >British</option>
+                <option value="Chinese">Chinese</option>
+                <option value="European">European</option>
+                <option value="French">French</option>
+                <option value="Indian">Indian</option>
+                <option value="Italian">Italian</option>
+                <option value="Japanese">Japanese</option>
+                <option value="Mediterranean">Mediterranean</option>
+                <option value="Mexican">Mexican</option>
+                <option value="Spanish">Spanish</option>
+                <option value="Thai">Thai</option>
+                <option value="Vietnamese">Vietnamese</option>
+            </select>
+            </div>
+            
+            <button class="btn" onclick="search()">Search</button>
         </div>
-        
-        <button onclick="search()">Search</button>
-    </main>
-    <div class="renderelement">
+        <div class="renderelement">
 
+        </div>
     </div>
+    
 <script src="./assets/js/index.js"></script>
 </body>
 </html>
